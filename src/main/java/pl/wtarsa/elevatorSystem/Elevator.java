@@ -66,7 +66,7 @@ public class Elevator {
         stop();
         int floor = -10;
         while (floor == -10 || !isDestinationFloorCorrect(floor)) {
-            System.out.println("[Elevator " + id + "] pickup floor: Choose destination floor");
+            System.out.println("[Elevator " + id + "] Choose destination floor: ");
             floor = ConsoleUI.getDestinationFloor();
         }
         currentTask.setDestinationFloor(floor);
